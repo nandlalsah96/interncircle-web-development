@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopX - Mini E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Shop<span>X</span></div>
+
+    <button id="cartBtn" class="cart-btn">
+        🛒 Cart <span id="cartCount">0</span>
+    </button>
+</header>
+
+<main>
+
+    <section class="hero">
+        <h1>Simple. Smart. Shopping.</h1>
+        <p>Discover amazing products at great prices.</p>
+    </section>
+
+    <section class="products-section">
+        <h2>Our Products</h2>
+
+        <div id="productContainer" class="products"></div>
+    </section>
+
+</main>
+
+
+<!-- CART MODAL -->
+<div id="cartModal" class="modal">
+
+    <div class="modal-content">
+
+        <button class="close-btn" id="closeCart">&times;</button>
+
+        <h2>Your Cart</h2>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-summary">
+            <h3>Total: ₹<span id="cartTotal">0</span></h3>
+
+            <button id="checkoutBtn" class="checkout-btn">
+                Checkout
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- CHECKOUT MODAL -->
+<div id="checkoutModal" class="modal">
+
+    <div class="modal-content checkout-content">
+
+        <button class="close-btn" id="closeCheckout">&times;</button>
+
+        <div class="success-icon">✓</div>
+
+        <h2>Checkout Preview</h2>
+
+        <p class="checkout-description">
+            Review your order before placing it.
+            This is a demo checkout and no payment will be processed.
+        </p>
+
+        <div id="checkoutItems" class="checkout-items"></div>
+
+        <div class="checkout-total">
+            <span>Order Total</span>
+            <strong>₹<span id="checkoutTotal">0</span></strong>
+        </div>
+
+        <button id="placeOrderBtn" class="place-order-btn">
+            Place Order
+        </button>
+
+        <button id="continueShopping" class="continue-btn">
+            Continue Shopping
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ORDER SUCCESS MODAL -->
+<div id="successModal" class="modal">
+
+    <div class="modal-content success-content">
+
+        <button class="close-btn" id="closeSuccess">&times;</button>
+
+        <div class="big-success">✓</div>
+
+        <h2>Order Placed Successfully!</h2>
+
+        <p>
+            Thank you for shopping with ShopX.
+        </p>
+
+        <button id="successContinue" class="continue-btn">
+            Continue Shopping
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
